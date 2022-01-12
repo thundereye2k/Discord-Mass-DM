@@ -312,7 +312,7 @@ class Discord(object):
                     return False
 
     def get_user_in_message(self, user: str = None):
-        mssage = self.message
+        mssage = str(self.message)
         message = mssage.replace("<user>", f"<@{user}>")
         return message
 
